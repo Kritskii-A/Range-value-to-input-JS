@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range value to input | Input type range stylization</title>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+    crossorigin="anonymous"
+  />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar navbar-default">
+        <div class="container">
+        <div class="navbar-header">
+            <a href="https://kritskii-a.github.io/" class="navbar-brand"
+            >Range value to input | Значение ползунка в текст | Стилизация ползунка</a
+            >
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="panel panel-success">
+            <div class="panel-heading"><h1>Range | Стилизация ползунка</h1></div>
+                <div class="panel-body">
+                    <input type="range" name="range" id="range" min="0" class="range" max="1000" step="10" oninput="changeRange()" value="175"/>
+                    <input type="number" id="inputRange" oninput="changeRangeInput()">
+                </div>
+        </div>
+
+       
+    </div>
+
+
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
